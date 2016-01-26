@@ -4,8 +4,7 @@
     <title>Cuiting Shi, Amoy U</title>
     <!-- link to main stylesheet -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="shortcut icon" href="/image/icon/moon.ico" type="image/x-icon">
-	<link rel="icon" href="/image/icon/moon.ico" type="image/x-icon">
+	<link rel="icon" href="/image/icon/moon32.png" type="image/png">
   </head>
   <body>
     <nav>
