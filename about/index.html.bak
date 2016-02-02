@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About--Cuiting Shi</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="icon" href="/image/icon/moon32w.png" type="image/png">
+	</head>
+	<body>	
+		<nav>
+        <ul>
+             <li><a href="/">Home</a></li>
+		      <li><a href="/blog">Blog</a></li>
+		      <li><a href="/project">Project</a></li>
+		      <li><a href="/about">About</a></li>
+		      <li><a href="/cv">CV</a></li>
+        </ul>
+        </nav>
+		<div class="container">
+		<div class="blurb">
+			<center><h1>Resume</h1></center>
+			<p>If you want to see my full resume, please feel free to contact me.</p>
+		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+     		 <ul>
+        		<li><a href="mailto:shicuitingfei@163.com">email</a></li>
+        		<li><a href="https://github.com/cuitingshi">github webpage</a></li>
+      		</ul>
+   		 </footer>
+  </body> 
+	</body>
+</html>
