@@ -3,8 +3,6 @@
 	<head>
 		<title>Project</title>
 		<link rel="stylesheet" href="/css/main.css"/>
-		<link rel="stylesheet" href="/twentysixteen/style.css"/>
-		<link rel="stylesheet" href="/twentysixteen/css/editor-style.css"/>
 		<link rel="icon" href="/image/icon/moon32w.png" type="image/png">
 	</head>
 	<body>
@@ -17,16 +15,10 @@
 	       <li><a href="/cv">CV</a></li>
         </ul>
         </nav>
-	<div id="page-top" class=""container clearfix">
-		<div id="pre-header">
-			<div id="social-icons">
-				<ul id="social-links">
-					<li class="facebook-link"><a id="social-01" href="https://www.facebook.com/cuiting.shi" target="_blank" original-title="Find me on facebook" class="facebook"></a></li>
-					<li class="twitter-link"><a id="social-02" href="https://twitter.com/cuitingshi" target="_blank" original-title="Find me on Twitter" class="twitter"</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
 	<p>being built...</p>
+	<p>Listen to a song at first~</p>
+	<video width="680" height="430" controls>
+		<source src="/music/I really like you.mp3" type="video/mp3">
+		</video>
 	</body>
 </html>
