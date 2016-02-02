@@ -17,7 +17,7 @@
         </nav>
 	<p>being built...</p>
 	<p>Listen to a song at first~</p>
-	<video width="680" height="430" controls>
+	<video width="680" height="480" controls>
 		<source src="/music/I really like you.mp3" type="video/mp3">
 		</video>
 	</body>
