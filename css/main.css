@@ -24,11 +24,11 @@ nav ul li {
     font-size: 1.2em;
 }
 
-nav a {
+nav a, footer a {
     text-decoration: none;
-    color: #999;
+    color: #666;
 }
-a:hover {
+nav a:hover {
     background-color: #E8F0F5;
 }
 h1 {
