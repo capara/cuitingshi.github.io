@@ -82,12 +82,18 @@ a:hover {
 
 .menu {
 	display: block;
-	font-size: 24px;
+	font-size: 20px;
 	margin-top: 40px;
 	margin-right: 10px;
 	margin-left: 10px;
 	padding: 0 10px;
 	font-weight: bold;
+}
+
+.menu .current-path a{
+	margin-left: -11px;
+	padding-left: 8px;
+	border-left: 6px solid #d9534f;
 }
 
 .menu ul li {
