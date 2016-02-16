@@ -54,8 +54,9 @@ ul, li {
 
 footer {
     color: DarkStateGray;
-    border-top: 10px solid #d5d5d5;
+    border-top: 8px solid #d5d5d5;
     font-size: 18px;
+    margin-top: 30px;
 }
 nav{
 	text-align: center;
@@ -94,9 +95,10 @@ a:hover {
 .menu {
 	display: block;
 	font-size: 20px;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-right: 10px;
 	padding: 0 10px;
+	padding-left: 10px;
 }
 
 .menu .current-path a{
