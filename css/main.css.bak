@@ -4,41 +4,48 @@ Basic
 ----------------------------------------------------------------------------*/
 body {
     margin: 50px auto;
-    width: 80%;
     flex: 1;
     justify-content: space-between;
     background-color: #fefefe;
     font-size: 20px;
 }
 h1 {
-    font-size: 48px;
-    font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: bold;
-}
-
-h2 {
     font-size: 42px;
     font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
 }
 
-h3 {
-	font-size: 36px;
-	font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
+h2 {
+    font-size: 36px;
+    font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
 }
 
-h4 {
+h3 {
 	font-size: 30px;
 	font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
 }
 
-h5 {
+h4 {
 	font-size: 24px;
 	font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
 }
+
+h5 {
+	font-size: 18px;
+	font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: bold;
+ }
+    
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #333;
+    font-family: 'Cursive', 'Verdana';
+}
+
 ul, li {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -74,13 +81,6 @@ a:hover {
     background-color: #E8F0F5;
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.4em;
-    color: #333;
-    font-family: 'Cursive', 'Verdana';
-}
-
 .navright {
 	display: block;
 	list-style: none;
@@ -89,6 +89,5 @@ p {
 	margin-top: 20px;
 	padding: 0 10px;
 }
-
 
 

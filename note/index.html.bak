@@ -36,14 +36,14 @@
 								</div>
 						</div><!-- /.col-sm-9"-->
 						<div class="col-sm-3">
-				        		<div class="navleft">
+				        		<div class="navright">
 									<ul>
 									<li><a href="note/cpp/">Note on C++</a></li>
 							        <li><a href="/note/linux/vi.html">Notes on VIM</a></li>
 									<li><a href="/note/linux/gdb.html">Notes on GDB</a></li>
 									<li><a href="/note/dedupe/">Data Deduplication</a></li>
 									</ul>
-								</div><!-- /.navleft class -->
+								</div><!-- /.navright class -->
 						</div><!-- /.col-sm-3"-->
 				</div><!-- /.row -->
 		</div><!-- /.container -->
