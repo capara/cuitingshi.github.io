@@ -111,3 +111,10 @@ a:hover {
 	list-style: none;
 }
 
+.entry-title {
+	margin: 0 0 20px;
+	padding: 10px 0 10px 12px;
+	font-weight: bold;
+	border-left: 16px solid #e5683e;
+	background-color: #f9f9f9;
+}
