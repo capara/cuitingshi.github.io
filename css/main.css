@@ -81,7 +81,7 @@ a:hover {
 }
 
 .site-avator {
-	margin: 0 auto;
+	margin: 20 auto;
 	width: 120px;
 	height: 120px;
 
@@ -93,14 +93,14 @@ a:hover {
 .menu {
 	display: block;
 	font-size: 20px;
-	margin-top: 40px;
+	margin-top: 30px;
 	margin-right: 10px;
-	margin-left: 10px;
+	margin-left: 5px;
 	padding: 0 10px;
 }
 
 .menu .current-path a{
-	margin-left: -11px;
+	margin-left: -12px;
 	padding-left: 8px;
 	border-left: 6px solid #d9534f;
 }
