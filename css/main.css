@@ -1,5 +1,5 @@
 body {
-    margin: 60px auto;
+    margin: 50px auto;
     width: 80%;
     flex: 1;
     justify-content: space-between;
@@ -33,6 +33,11 @@ nav ul li {
 	padding: 0 10px;
 }
 
+.navleft ul li {
+	list-style: note;
+	display: inline;
+	margin-top: 25px;
+}
 a {
     text-decoration: none;
     color: #666;
