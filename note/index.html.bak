@@ -9,31 +9,27 @@
 		<link rel="stylesheet" type="text/css" href="/css/main.css">	
 	</head>
 	<body>	
-		
-		<nav>
-        <ul>
-             <li><a href="/">Home</a></li>
-		      <li><a href="/blog">Blog</a></li>
-		      <li><a href="/project">Project</a></li>
-		      <li><a href="/note"><b>Note</b></a></li>
-		      <li><a href="/about">About</a></li>
-        </ul>
-        </nav>
+		<div class="container">
+			<nav><ul>
+	             <li><a href="/">Home</a></li>
+			      <li><a href="/blog">Blog</a></li>
+			      <li><a href="/project">Project</a></li>
+			      <li><a href="/note"><b>Note</b></a></li>
+			      <li><a href="/about">About</a></li>
+       		 </ul></nav>
+        </div><!-- /.container -->
         
-        <div class="container">
+        <div class="jumbotron">
 		        <div class="row">
 						<div class="col-sm-9">
-								<div class="container">　
 										<h2>Pointer Type vs Reference Type</h2>
 										<p> 引用：对象的另外一个名字。
 												<br> 记法：X& 表示到X的引用 
 												<br> 注意这里的对象是对应一定数量的存储单元的实体的，所以为了确保一个引用总能是某个东西的名字，必须对引用进行初始化  
 										</p>
-								</div><!-- /container -->
-								<div class="container">
+					
 										<h2>A Survey of Data Deduplication Systems</h2>
 										<p>Definition of Deduplication: the automatic elimination of duplicate data in a storage system</p>
-								</div>
 						</div><!-- /.col-sm-9"-->
 						<div class="col-sm-3">
 				        		<div class="navright">
@@ -46,7 +42,8 @@
 								</div><!-- /.navright class -->
 						</div><!-- /.col-sm-3"-->
 				</div><!-- /.row -->
-		</div><!-- /.container -->
+			</div><!-- /.jumbotron -->
+		
 		<footer>
      		 <ul>
         		<li><a href="mailto:shicuitingfei@163.com">email</a></li>

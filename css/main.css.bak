@@ -3,7 +3,8 @@
 Basic
 ----------------------------------------------------------------------------*/
 body {
-    margin: 50px auto;
+    margin: 60px auto;
+    width: 86%;
     flex: 1;
     justify-content: space-between;
     background-color: #fefefe;
@@ -58,10 +59,12 @@ ol {
 
 footer {
     color: DarkStateGray;
-    border-top: 2px solid #d5d5d5;
+    border-top: 20px solid #d5d5d5;
     font-size: 18px;
 }
-
+nav, {
+	text-align: center;
+}
 
 nav ul li, footer ul li {
 	display: inline;
@@ -70,7 +73,7 @@ nav ul li, footer ul li {
 }
 
 nav ul li {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 a {
@@ -84,7 +87,7 @@ a:hover {
 .navright {
 	display: block;
 	list-style: none;
-	font-size: 22px;
+	font-size: 24px;
 	margin-right: 15px;
 	margin-top: 20px;
 	padding: 0 10px;
