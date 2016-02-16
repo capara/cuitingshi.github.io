@@ -43,7 +43,6 @@ ul, li {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
-    display: inline;
 }
 
 ol {
@@ -64,16 +63,7 @@ nav ul li, footer ul li {
 }
 
 nav ul li {
-    font-size: 1.3em;
-}
-
-.navright {
-	display: block;
-	list-style: none;
-	font-size: 22px;
-	margin-right: 15px;
-	margin-top: 20px;
-	padding: 0 10px;
+    font-size: 22px;
 }
 
 a {
@@ -89,6 +79,15 @@ p {
     line-height: 1.4em;
     color: #333;
     font-family: 'Cursive', 'Verdana';
+}
+
+.navright {
+	display: block;
+	list-style: none;
+	font-size: 22px;
+	margin-right: 15px;
+	margin-top: 20px;
+	padding: 0 10px;
 }
 
 
