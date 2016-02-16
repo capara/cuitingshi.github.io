@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>Note</title>
+		<link rel="icon" href="/image/icon/moon32w.png" type="image/png">
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" id="bootstrap-css"  href="http://cdn.staticfile.org/twitter-bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="/css/main.css">	
+	</head>
+	<body>	
+		<nav>
+        <ul>
+             <li><a href="/">Home</a></li>
+		      <li><a href="/blog">Blog</a></li>
+		      <li><a href="/project">Project</a></li>
+		      <li><a href="/note"><b>Note</b></a></li>
+		      <li><a href="/about">About</a></li>
+        </ul>
+        </nav>
+        <div class="container">
+		        <div class="row">
+					<div class="col-sm-9">
+						<h2>Pointer Type vs Reference Type</h2>
+							<p> 引用：对象的另外一个名字。
+								<br> 记法：X& 表示到X的引用 </br>
+								<br> 注意这里的对象是对应一定数量的存储单元的实体的，所以为了确保一个<b>引用</b>总能是某个东西的名字，必须对引用进行初始化 </br> 
+							</p>
+						</div><!-- margin -->
+						<h2>A Survey of Data Deduplication Systems</h2>
+						<div margin=20px>
+							<p>Definition of Deduplication: the automatic elimination of duplicate data in a storage system</p>
+						</div>
+					</div><!-- /.col-sm-9"-->
+					<div class="col-sm-3">
+			        		<div class="navleft">
+								<ul>
+								<li><a href="note/cpp/">Note on C++</a></li>
+						        <li><a href="/note/linux/vi.html">Notes on VIM</a></li>
+								<li><a href="/note/linux/gdb.html">Notes on GDB</a></li>
+								<li><a href="/note/dedupe/">Data Deduplication</a></li>
+								</ul>
+							</div><!-- /.navleft class -->
+					</div><!-- /.col-sm-3"-->
+				</div><!-- /.row -->
+		</div><!-- /.container -->
+		<footer>
+     		 <ul>
+        		<li><a href="mailto:shicuitingfei@163.com">email</a></li>
+        		<li><a href="https://github.com/cuitingshi">github webpage</a></li>
+      		</ul>
+   		 </footer>
+  </body> 
+	</body>
+</html>

@@ -64,7 +64,7 @@ nav ul li, footer ul li {
 }
 
 nav ul li {
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 .navright {
