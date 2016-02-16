@@ -24,10 +24,6 @@ nav ul li {
     font-size: 1.2em;
 }
 
-.navleft {
-	display: table;
-	list-style: none;
-}
 a {
     text-decoration: none;
     color: #666;
