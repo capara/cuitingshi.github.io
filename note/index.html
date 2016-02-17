@@ -11,10 +11,10 @@
 		
 		<!-- use google code prettify -->
 		<link rel="stylesheet" type="text/css" href="/css/prettify/prettify.css">
-		<script type='text/javascript' src='http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js'></script>	
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 		
 	</head>
-	<body onload="prettyPrint()">	
+	<body>	
 	<div class="container">
 		<nav><ul>
 	             <li><a href="/">Home</a></li>
@@ -55,6 +55,7 @@
 			    </ol>
 			</p>
 			<p>标准库operator new的一个简单实现：</p>
+			<?prettify?>
 			<pre class="prettyprint linenums"><code>void* operator new(sizee_t size) 
 {
 	for (;;){ 
