@@ -25,7 +25,7 @@
 		<div class="site-avator"></div>
   		<div class="menu">
 			<ul>
-			<li class="current-path"><a href="note/cpp/">Note on C++</a></li>
+			<li class="current-path"><a href="/note/cpp/">Note on C++</a></li>
 			<li><a href="/note/linux/">Linux/Unix environment</a></li>
 			<li><a href="/note/dedupe/">Data Deduplication</a></li>
 			<li><a href="/note/algorithms">Algorithms and Data Structure</a></li>
@@ -39,7 +39,26 @@
 												<br> è®°æ³•ï¼šX& è¡¨ç¤ºåˆ°Xçš„å¼•ç”¨ 
 												<br> æ³¨æ„è¿™é‡Œçš„å¯¹è±¡æ˜¯å¯¹åº”ä¸€å®šæ•°é‡çš„å­˜å‚¨å•å…ƒçš„å®ä½“çš„ï¼Œæ‰€ä»¥ä¸ºäº†ç¡®ä¿ä¸€ä¸ªå¼•ç”¨æ€»èƒ½æ˜¯æŸä¸ªä¸œè¥¿çš„åå­—ï¼Œå¿…é¡»å¯¹å¼•ç”¨è¿›è¡Œåˆå§‹åŒ–  
 												</p>
-											</div><!-- /.col-sm-9"-->
+			
+			<h2 class="entry-title">new vs operator new</h2>
+			<p>ÔËËã·ûnewÓÃÓÚ½¨Á¢ÆğÉú´æÊ±¼ä²»ÒÀÀµÓÚÆä×÷ÓÃÓòµÄ¶ÔÏóÁË£¬Ò²¾ÍÊÇËµ£¬ÓÉnew·ÖÅäµÄ¶ÔÏóÊÇÔÚ×ÔÓÉ´æ´¢£¨¶Ñ£©ÖĞ£¬ÓÉnew·ÖÅäµÄµ¥¸ö¶ÔÏóÓÉÔËËã·ûdelete pointer or ÓÉnew·ÖÅäµÄÊı×éÓÉdelte[] pointer ÏÔÊ½µØÉ¾³ı¡£</p>
+			<p>¼òµ¥µÄ<code>char* s = new char[10];</code>Êµ¼ÊÉÏÊÇĞèÒªÏÂÃæ¼¸¸ö²½ÖèµÄ£º
+			    <ol><li>¼ÆËã³öĞèÒª·ÖÅäµÄ×Ö½ÚµÄÊıÁ¿size_t£»</li>
+			    <li>µ÷ÓÃ<code>void* operator new[](size_t)</code>È¥·ÖÅäÊÊµ±ÊıÁ¿µÄ×Ö½Ú£»Èç¹ûÊ¹ÓÃÔËËã·ûnewÎªµ¥¸ö¶ÔÏó·ÖÅä¿Õ¼äÊ±£¬Ôòµ÷ÓÃ<code>void* operator new(size_t)</code>;</li>
+			    <li>....</li>
+			    </ol>
+			</p>
+			<p>±ê×¼¿âoperator newµÄÒ»¸ö¼òµ¥ÊµÏÖ£º</p>
+			<p><code>void* operator new(sizee_t size) <br/>
+			{ <br />
+				for (;;){ <br />
+					if (void* p = malloc(size)) return p;<br />
+					if (_new_handler == 0) throw bad_alloc(); //Ã»ÓĞÓÃ»§ÉèÖÃµÄÒì³£´¦ÀíÆ÷£¬Ä¬ÈÏÖ±½ÓÅ×³öbad_alloc <br />
+					_new_handler(); //µ÷ÓÃÓÃ»§ÉèÖÃµÄÒì³£´¦Àí´úÂë <br />
+				} <br />
+			}</code></p> 
+
+		</div><!-- /.col-sm-9"-->
 										</div><!-- /.row -->
 										</div><!-- /.container -->
 			
