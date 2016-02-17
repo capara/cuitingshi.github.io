@@ -55,7 +55,7 @@
 			    </ol>
 			</p>
 			<p>标准库operator new的一个简单实现：</p>
-			<pre class="prettyprint">void* operator new(sizee_t size) 
+			<pre class="prettyprint linenums">void* operator new(sizee_t size) 
 {
 	for (;;){ 
 		if (void* p = malloc(size)) return p;
