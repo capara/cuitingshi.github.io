@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
 		<meta charset="UTF-8">
@@ -35,26 +35,26 @@
 
 		<div class="col-sm-9">
 			<h2 class="entry-title">Pointer Type vs Reference Type</h2>
-			<p> 引用：对象的另外一个名字。
-												<br> 记法：X& 表示到X的引用 
-												<br> 注意这里的对象是对应一定数量的存储单元的实体的，所以为了确保一个引用总能是某个东西的名字，必须对引用进行初始化  
+			<p> 寮曠敤锛氬璞＄殑鍙﹀涓€涓悕瀛椼€?
+												<br> 璁版硶锛歑& 琛ㄧず鍒癤鐨勫紩鐢?
+												<br> 娉ㄦ剰杩欓噷鐨勫璞℃槸瀵瑰簲涓€瀹氭暟閲忕殑瀛樺偍鍗曞厓鐨勫疄浣撶殑锛屾墍浠ヤ负浜嗙‘淇濅竴涓紩鐢ㄦ€昏兘鏄煇涓笢瑗跨殑鍚嶅瓧锛屽繀椤诲寮曠敤杩涜鍒濆鍖? 
 												</p>
 			
 			<h2 class="entry-title">new vs operator new</h2>
-			<p>�����new���ڽ���������ʱ�䲻��������������Ķ����ˣ�Ҳ����˵����new����Ķ����������ɴ洢���ѣ��У���new����ĵ��������������delete pointer or ��new�����������delte[] pointer ��ʽ��ɾ����</p>
-			<p>�򵥵�<code>char* s = new char[10];</code>ʵ��������Ҫ���漸������ģ�
-			    <ol><li>�������Ҫ������ֽڵ�����size_t��</li>
-			    <li>����<code>void* operator new[](size_t)</code>ȥ�����ʵ��������ֽڣ����ʹ�������newΪ�����������ռ�ʱ�������<code>void* operator new(size_t)</code>;</li>
+			<p>运算符new用于建立起生存时间不依赖于其作用域的对象了，也就是说，由new分配的对象是在自由存储（堆）中，由new分配的单个对象由运算符delete pointer or 由new分配的数组由delte[] pointer 显式地删除。</p>
+			<p>简单的<code>char* s = new char[10];</code>实际上是需要下面几个步骤的：
+			    <ol><li>计算出需要分配的字节的数量size_t；</li>
+			    <li>调用<code>void* operator new[](size_t)</code>去分配适当数量的字节；如果使用运算符new为单个对象分配空间时，则调用<code>void* operator new(size_t)</code>;</li>
 			    <li>...other operation...</li>
 			    </ol>
 			</p>
-			<p>��׼��operator new��һ����ʵ�֣�</p>
+			<p>标准库operator new的一个简单实现：</p>
 			<p><code>void* operator new(sizee_t size) <br/>
 			{ <br />
 				for (;;){ <br />
 					if (void* p = malloc(size)) return p;<br />
-					if (_new_handler == 0) throw bad_alloc(); //û���û����õ��쳣��������Ĭ��ֱ���׳�bad_alloc <br />
-					_new_handler(); //�����û����õ��쳣�������� <br />
+					if (_new_handler == 0) throw bad_alloc(); //没有用户设置的异常处理器，默认直接抛出bad_alloc <br />
+					_new_handler(); //调用用户设置的异常处理代码 <br />
 				} <br />
 			}</code></p> 
 
