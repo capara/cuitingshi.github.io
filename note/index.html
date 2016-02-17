@@ -45,7 +45,7 @@
 			<p>简单的<code>char* s = new char[10];</code>实际上是需要下面几个步骤的：
 			    <ol><li>计算出需要分配的字节的数量size_t；</li>
 			    <li>调用<code>void* operator new[](size_t)</code>去分配适当数量的字节；如果使用运算符new为单个对象分配空间时，则调用<code>void* operator new(size_t)</code>;</li>
-			    <li>....</li>
+			    <li>...other operation...</li>
 			    </ol>
 			</p>
 			<p>标准库operator new的一个简单实现：</p>
