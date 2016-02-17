@@ -8,7 +8,6 @@ body {
     justify-content: space-between;
     background-color: #fefefe;
     font-size: 20px;
-    width: 80%;
 }
 h1 {
     font-size: 42px;
@@ -122,5 +121,5 @@ a:hover {
 	background-color: #f9f9f9;
 }
 .home {
-	width: 80%;
+	width: 70%;
 }
