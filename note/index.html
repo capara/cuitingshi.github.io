@@ -39,7 +39,26 @@
 												<br> è®°æ³•ï¼šX& è¡¨ç¤ºåˆ°Xçš„å¼•ç”¨ 
 												<br> æ³¨æ„è¿™é‡Œçš„å¯¹è±¡æ˜¯å¯¹åº”ä¸€å®šæ•°é‡çš„å­˜å‚¨å•å…ƒçš„å®žä½“çš„ï¼Œæ‰€ä»¥ä¸ºäº†ç¡®ä¿ä¸€ä¸ªå¼•ç”¨æ€»èƒ½æ˜¯æŸä¸ªä¸œè¥¿çš„åå­—ï¼Œå¿…é¡»å¯¹å¼•ç”¨è¿›è¡Œåˆå§‹åŒ–  
 												</p>
-											</div><!-- /.col-sm-9"-->
+			
+			<h2 class="entry-title">new vs operator new</h2>
+			<p>ÔËËã·ûnewÓÃÓÚ½¨Á¢ÆðÉú´æÊ±¼ä²»ÒÀÀµÓÚÆä×÷ÓÃÓòµÄ¶ÔÏóÁË£¬Ò²¾ÍÊÇËµ£¬ÓÉnew·ÖÅäµÄ¶ÔÏóÊÇÔÚ×ÔÓÉ´æ´¢£¨¶Ñ£©ÖÐ£¬ÓÉnew·ÖÅäµÄµ¥¸ö¶ÔÏóÓÉÔËËã·ûdelete pointer or ÓÉnew·ÖÅäµÄÊý×éÓÉdelte[] pointer ÏÔÊ½µØÉ¾³ý¡£</p>
+			<p>¼òµ¥µÄ<code>char* s = new char[10];</code>Êµ¼ÊÉÏÊÇÐèÒªÏÂÃæ¼¸¸ö²½ÖèµÄ£º
+			    <ol><li>¼ÆËã³öÐèÒª·ÖÅäµÄ×Ö½ÚµÄÊýÁ¿size_t£»</li>
+			    <li>µ÷ÓÃ<code>void* operator new[](size_t)</code>È¥·ÖÅäÊÊµ±ÊýÁ¿µÄ×Ö½Ú£»Èç¹ûÊ¹ÓÃÔËËã·ûnewÎªµ¥¸ö¶ÔÏó·ÖÅä¿Õ¼äÊ±£¬Ôòµ÷ÓÃ<code>void* operator new(size_t)</code>;</li>
+			    <li>....</li>
+			    </ol>
+			</p>
+			<p>±ê×¼¿âoperator newµÄÒ»¸ö¼òµ¥ÊµÏÖ£º</p>
+			<p><code>void* operator new(sizee_t size)
+			{
+				for (;;){
+					if (void* p = malloc(size)) return p;
+					if (_new_handler == 0) throw bad_alloc(); //Ã»ÓÐÓÃ»§ÉèÖÃµÄÒì³£´¦ÀíÆ÷£¬Ä¬ÈÏÖ±½ÓÅ×³öbad_alloc
+					_new_handler(); //µ÷ÓÃÓÃ»§ÉèÖÃµÄÒì³£´¦Àí´úÂë
+				}
+			}</code></p>
+
+		</div><!-- /.col-sm-9"-->
 										</div><!-- /.row -->
 										</div><!-- /.container -->
 			
