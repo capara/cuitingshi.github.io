@@ -55,7 +55,7 @@
 			    </ol>
 			</p>
 			<p>标准库operator new的一个简单实现：</p>
-			<pre class="prettyprint linenums">void* operator new(sizee_t size) 
+			<pre class="prettyprint linenums"><code>void* operator new(sizee_t size) 
 {
 	for (;;){ 
 		if (void* p = malloc(size)) return p;
@@ -63,7 +63,7 @@
 			throw bad_alloc(); /*没有用户设置的异常处理器，默认直接抛出bad_alloc */
 		_new_handler(); //调用用户设置的异常处理代码 
 	} 
-}</pre> 
+}</code></pre> 
 
 		</div><!-- /.col-sm-9"-->
 										</div><!-- /.row -->
