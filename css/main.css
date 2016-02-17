@@ -28,20 +28,20 @@ h3 {
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 26px;
 	font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
 }
 
 h5 {
-	font-size: 20px;
+	font-size: 22px;
 	font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
  }
     
 p {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     color: #333;
     font-family: 'Cursive', 'Verdana';
     text-align: justify;
