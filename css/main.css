@@ -34,14 +34,14 @@ h4 {
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 20px;
 	font-family: 'Comic Sans MS', 'cursive', 'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
  }
     
 p {
-    font-size: 1.2em;
-    line-height: 1.4em;
+    font-size: 20px;
+    line-height: 20px;
     color: #333;
     font-family: 'Cursive', 'Verdana';
     text-align: justify;
@@ -56,7 +56,7 @@ ul, li {
 footer {
     color: DarkStateGray;
     border-top: 7px solid #d5d5d5;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 30px;
 }
 nav{
@@ -96,7 +96,7 @@ a:hover {
 
 .menu {
 	display: block;
-	font-size: 20px;
+	font-size: 22px;
 	margin-top: 20px;
 	margin-right: 10px;
 	padding: 0 10px;
