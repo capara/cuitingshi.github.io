@@ -3,9 +3,9 @@
 .prettyprint {
   background: black;
   font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
-  font-size: 12px;
-  line-height: 1.5;
-  border: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 20px;
+  border: 3px solid #ccc;
   padding: 10px;
 }
 
