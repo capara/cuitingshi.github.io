@@ -14,7 +14,7 @@
 		<script type="text/javascript" src="/css/prettify/jquery.min.js"></script>	
 		
 	</head>
-	<body onload="prettyPrint();">	
+	<body>	
 	<div class="container">
 		<nav><ul>
 	             <li><a href="/">Home</a></li>
