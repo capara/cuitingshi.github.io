@@ -130,6 +130,11 @@ a:hover {
 .entry-meta {
 }
 
+.entry-meta .cats,
+.entry-meta .tags {
+	margin-left: 10px;
+}
+
 .entry-meta .date {
 	color: #333;
 }
