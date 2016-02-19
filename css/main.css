@@ -123,3 +123,44 @@ a:hover {
 .home {
 	width: 70%;
 }
+
+.entry-footer {
+}
+
+.entry-meta {
+}
+
+.entry-meta .date {
+	color: #333;
+}
+
+.entry-meta .tags a,
+.entry-info .tags a {
+	display: inline-block;
+	padding: 0px 4px;
+	margin: 0 4px;
+	color: #fff;
+	background-color: #777;
+}
+
+.yarpp-related {
+}
+
+.yarpp-related h6 {
+	border-left: 10px solid #777777;
+	padding: 10px 0 10px 14px;
+	background-color: #f7f7f7;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.yarpp-related ol {
+	padding: 0;
+	margin: 0;
+}
+
+.yarpp-related .fa {
+	color: #BCBCBC;
+	margin-right: 10px;
+}
+
