@@ -125,6 +125,9 @@ a:hover {
 }
 
 .entry-footer {
+	border-top: none;
+	border-bottom: 2px dashed #000;
+	padding-bottom: 20px;
 }
 
 .entry-meta {
