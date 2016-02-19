@@ -125,14 +125,14 @@ a:hover {
 }
 
 .entry-footer {
-	font-size: 16px;
 	border-top: none;
 	border-bottom: 1px dashed #000;
 	padding-bottom: 8px;
 	margin-bottom: 30px;
 }
-
 .entry-meta {
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .entry-meta .cats,
