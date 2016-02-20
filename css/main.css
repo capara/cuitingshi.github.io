@@ -82,7 +82,12 @@ nav ul li {
     font-size: 24px;
 }
 
-a {
+nav a {
+	text-decoration: none;
+	color: #222222;
+}
+
+p a, footer a {
     text-decoration: none;
     color: #666;
 }
