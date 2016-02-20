@@ -72,8 +72,10 @@ nav ul li, .site-footer ul li {
 }
 
 .nav-cur-path {
-	color: #d9534f;
 	font-size: bold;
+	background: #CBBFD7;
+	border-bottom: 1px solid #3ff;
+}
 }
 
 
