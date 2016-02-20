@@ -146,6 +146,9 @@ a:hover {
 	padding-bottom: 8px;
 	margin-bottom: 30px;
 }
+.entry-footer a {
+	text-decoration: none;
+}
 
 .entry-meta {
 	font-size: 18px;
@@ -169,6 +172,10 @@ a:hover {
 	background-color: #777;
 }
 
+.entry-link {
+	text-decoration: none;
+	color: #0BCBD7;
+}
 .yarpp-related {
 }
 
