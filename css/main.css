@@ -72,11 +72,13 @@ nav ul li, .site-footer ul li {
 }
 
 .nav-cur-path {
+	color: F3FAF8;
 	font-size: bold;
-	background: #CBBFD7;
-	border-bottom: 1px solid #3ff;
+	background-color: #42354F;
+	padding: 4px 4px 4px 4px;
+	border-bottom: 1px solid 9D98A2;
 }
-}
+
 
 
 nav ul li {
@@ -94,6 +96,7 @@ p a, .site-footer a {
 }
 a:hover {
     background-color: #E8F0F5;
+    color: black;
 }
 
 .site-avator {
