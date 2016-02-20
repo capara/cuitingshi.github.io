@@ -67,16 +67,16 @@ nav{
 
 nav ul li, .site-footer ul li {
 	display: inline;
-    	margin-right: 30px;
+    	margin-right: 40px;
     	list-style: none;
 }
 
 .nav-cur-path {
 	font-size: bold;
 	background-color: #D1EE93;
-	padding: 8px 8px 8px 8px;
+	padding: 10px 10px 10px 10px;
 	border-bottom: 1px solid #9D98A2;
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 8px 8px 8px 8px;
 }
 
 
