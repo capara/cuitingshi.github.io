@@ -87,9 +87,10 @@ nav a {
 	color: #222222;
 }
 
-p a, footer a {
+.menu a, p a, footer a {
     text-decoration: none;
     color: #666;
+    font-weight: bold;
 }
 a:hover {
     background-color: #E8F0F5;
@@ -113,6 +114,11 @@ a:hover {
 	margin-right: 10px;
 	padding: 0 10px;
 	padding-left: 10px;
+}
+
+.menu a {
+	text-decoration: noen;
+	color: #444444;
 }
 
 .menu .current-path a{
