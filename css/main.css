@@ -87,7 +87,7 @@ nav a {
 	color: #222222;
 }
 
-.menu a, p a, footer a {
+p a, footer a {
     text-decoration: none;
     color: #666;
     font-weight: bold;
@@ -109,7 +109,7 @@ a:hover {
 
 .menu {
 	display: block;
-	font-size: 22px;
+	font-size: 20px;
 	margin-top: 20px;
 	margin-right: 10px;
 	padding: 0 10px;
@@ -117,8 +117,8 @@ a:hover {
 }
 
 .menu a {
-	text-decoration: noen;
-	color: #444444;
+	text-decoration: none;
+	color: #666;
 }
 
 .menu .current-path a{
