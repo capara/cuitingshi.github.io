@@ -72,6 +72,11 @@ nav ul li, footer ul li {
     	list-style: none;
 }
 
+.nav-cur-path {
+	color: #d9534f;
+}
+
+
 nav ul li {
     font-size: 24px;
 }
