@@ -144,7 +144,8 @@ a:hover {
 	border-top: none;
 	border-bottom: 1px dashed #000;
 	padding-bottom: 8px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
+	font-size: 18px;
 }
 .entry-footer a {
 	text-decoration: none;
