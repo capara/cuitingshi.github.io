@@ -66,6 +66,22 @@
 	} 
 }</pre> 
 
+		<h2 class="entry-title">C++ 运算符重载</h2>
+		<p>
+		<ol>
+			<h3><li>运算符函数</li><h3>
+			运算符函数的名字是由关键字<code>operator</code>后跟对应的运算符构成的，比如<code>operator<<</code> 运算符函数的定义和使用都可以像其它函数一样。使用运算符不过是显式地调用运算符函数的一种简写形式。例如，
+<pre class="prettyprint">void f(complex a, complex b)
+{
+	complex c = a + b;	//简写
+	complex d = a.operator+(b); //显式调用
+}
+</pre>
+			<h4>二元和一元运算符</h4>
+			针对二元运算符：可定义为取一个参数的<code>非静态成员函数</code>，或定义为取两个参数的<code>非成员函数</code>
+			<p>针对一元运算符，... </p>
+		</ol>
+		</p>
 		</div><!-- /.col-sm-9"-->
 										</div><!-- /.row -->
 										</div><!-- /.container -->
