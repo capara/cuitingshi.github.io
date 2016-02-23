@@ -87,13 +87,14 @@
 }
 </pre>
 </p>
-			<h4>二元和一元运算符</h4>
+			<ol><li><h4>二元和一元运算符</h4></li>
 			<p>针对二元运算符：可定义为取一个参数的<code>非静态成员函数</code>，或定义为取两个参数的<code>非成员函数</code>；</p>
 			<p>针对一元运算符：可定义为空参数的<code>非静态成员函数</code>，或定义为取一个参数的<code>非成员函数。</code> <br/>
-			其中，针对前缀一元运算符@，<b>@aa</b>可以解释为<b>aa.operator@()</b>或者<b>operator@(aa)</b>; <br/>
-			&nbsp;针对后缀一元运算符@，<b>aa@</b>可以解释为<b>aa.operator(int)</b>或者<b>operator@(aa,int)</b>。
+			其中，针对前缀一元运算符@，<b>@aa</b>可以解释为aa.operator@()或者operator@(aa);针对后缀一元运算符@，<b>aa@</b>可以解释为aa.operator(int)或者operator@(aa,int)。
+			</ol>
 			</p>
 		</ol>
+		<i class="fa fa-square fa-fw"></i>一个运算符函数必须是一个成员函数，或者是一个非成员函数，该函数的参数中至少有一个是用户定义类型的。（当然，重新定义运算符new和delete的函数则没有此项要求。）
 		</p>
 
 
