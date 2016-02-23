@@ -56,7 +56,7 @@
 			    </ol>
 			</p>
 			<p>标准库operator new的一个简单实现：</p>
-			<pre class="prettyprint linenums">void* operator new(sizee_t size) 
+			<p><pre class="prettyprint linenums">void* operator new(sizee_t size) 
 {
 	for (;;){ 
 		if (void* p = malloc(size)) return p;
@@ -64,7 +64,7 @@
 			throw bad_alloc(); /*没有用户设置的异常处理器，默认直接抛出bad_alloc */
 		_new_handler(); //调用用户设置的异常处理代码 
 	} 
-}</pre> 
+}</pre> </p>
 
 
 		<footer class="entry-footer">
@@ -89,7 +89,9 @@
 </p>
 			<h4>二元和一元运算符</h4>
 			<p>针对二元运算符：可定义为取一个参数的<code>非静态成员函数</code>，或定义为取两个参数的<code>非成员函数</code></p>
-			<p>针对一元运算符，... </p>
+			<p>针对一元运算符：可定义为1参数的<code>非静态成员函数</code>，或定义为取一个参数的<code>非成员函数</code>
+			<p>其中，针对前缀一元运算符@，<code>@aa</code>可以解释为<code>aa.operator@()</code>或者<code>operator@(aa)</code>;</p>
+			<p>针对后缀一元运算符@，<code>aa@</code>可以解释为<code>aa.operator(int)</code>或者<code>operator@(aa,int)</code>。</p>
 		</ol>
 		</p>
 
