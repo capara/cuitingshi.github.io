@@ -1,1 +1,2 @@
-# cuitingshi.github.io
+## Info
+the repository for xyzLOL.github.io
